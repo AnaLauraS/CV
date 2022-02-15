@@ -20,6 +20,7 @@ function nueva(a) {
       cambiar(a);
   }else{
       cambiarTodo();
-      mostrar(a)
-  }
+      mostrar(a);
+  };
 };
+

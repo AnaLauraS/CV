@@ -8,7 +8,6 @@
 }
 
 header {
-  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,6 +23,7 @@ h1 {
   font-family: 'Cinzel', serif;
   text-align: center;
   text-shadow: 7px 7px 13px #1100ff, -7px -7px 13px #1100ff;
+  font-size: 2.4rem;
 }
 
 .container-slider {
@@ -38,7 +38,7 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   height: 14vh;
-  width: 400%;
+  width: 300%;
   margin-left: -100%;
 }
 
@@ -57,7 +57,7 @@ h1 {
 }
 
 body {
-  background-image: url("../img/pexels-pixabay-270360.jpg");
+  background-image: url("../img/pexels-ian-beckley-2440021.jpg");
   width: 100%;
   background-attachment: fixed;
   overflow-x: hidden;
@@ -70,7 +70,7 @@ body {
   border-radius: 12px;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  background-color: rgba(134, 158, 89, 0.363);
+  background-color: rgba(54, 54, 54, 0.548);
   width: 90vw;
 }
 
@@ -98,18 +98,19 @@ body {
 
 .titulos {
   font-family: 'Cabin Sketch', cursive;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   border-radius: 12px;
-  background-color: rgba(116, 197, 211, 0.637);
-  width: 22rem;
+  background-color: rgba(233, 118, 23, 0.603);
+  width: 13rem;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
-.titulos:hover {
-  font-size: 1.5rem;
-  width: 25rem;
+.titulos:hover, .mantener {
+  font-size: 1.4rem;
+  width: 16rem;
   -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
   text-shadow: 1px 1px 2px gold, 0 0 1em red, 0 0 0.2em gold;
@@ -152,7 +153,7 @@ body {
 }
 
 .ver * {
-  display: inline;
+  display: inline-block;
 }
 
 footer {
@@ -160,7 +161,7 @@ footer {
   bottom: 0;
   width: 100vw;
   background-color: black;
-  height: 1.5rem;
+  height: 1.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
