@@ -119,13 +119,40 @@ body {
   border-radius: 12px;
   background-color: rgba(65, 72, 180, 0.384);
   width: 90vw;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .oculto p {
   font-size: 1.2rem;
   margin-top: 0.5rem;
+}
+
+.no-ver {
+  height: 0;
+  opacity: 0;
+  padding: 0;
+  margin-bottom: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  visibility: hidden;
+}
+
+.no-ver * {
+  display: none;
+}
+
+.ver {
+  height: auto;
+  opacity: 1;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.ver * {
+  display: inline;
 }
 
 footer {

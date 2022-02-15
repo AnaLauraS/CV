@@ -105,13 +105,35 @@ body {
     border-radius: 12px;
     background-color: rgba(65, 72, 180, 0.384);
     width: 90vw;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    transition: all 0.5s linear;
     p {
         font-size: 1.2rem;
         margin-top: 0.5rem;
     }
 }
+
+.no-ver {
+    height: 0;
+    opacity: 0;
+    padding: 0;
+    margin-bottom: 0;
+    transition: all 0.5s linear;
+    visibility: hidden;
+    * {
+        display: none;
+    }
+}
+.ver {
+    height: auto;
+    opacity: 1;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.5s linear;
+    * {
+        display: inline;
+    }
+}
+
 
 footer {
     position: fixed;
