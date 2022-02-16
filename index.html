@@ -32,100 +32,109 @@
         <p>Hacía el final hay un lindo juego para los reclutadores IT (¡con premio!), y también un bonus track que todos van a disfrutar</p>
         <h3>¡Vamos a divertirnos!</h3>
     </section>
+    <div class="chau-pres" onclick="paraPresentacion()">
+        <div class="btn-ocultar">
+            <i class="fa-solid fa-angle-up"></i><span> Ocultar</span>
+        </div>
+        <div class="btn-ver" style="display: none;">
+            <i class="fa-solid fa-angle-down"></i><span> Ver introducción</span>
+        </div>
+        <script src="./js/aparicion.js"></script>
+    </div>
 
     <section>
         <div class="titulo-boton">
-            <p class="titulos" onclick="nueva('sobre-mi')"><< Sobre mí >></p>
+            <p class="titulos sobre-mi" onclick="nueva('sobre-mi')"><< Sobre mí >></p>
                 <div class="oculto no-ver" id="sobre-mi" >
-                <p>Depende del momento de mi vida en que me hayan conocido, es posible que me encasillen en una profesión o en otra. Lo que es quiere decir realmente, es que no soy una persona conformista: <strong>AMO CRECER</strong></p>
-                <p>Todo el tiempo busco desarrollar nuevas habilidades e implementar los conocimientos y experiencias previas para hacer un trabajo excelente. Soy muy exigente, porque realmente creo que todos siempre podemos ser mejores.</p>
-                <p>A lo largo de mi vida pasé por varios rubros: politología, ingeniería, auditoría, hoy en programación. Hasta en algún momento tuve mi propio negocio. Pero todos tienen algo en común: pensamiento analítico, resolución de problemas y liderazgo.</p>
+                <p>Si hay algo que me define, es que <strong>AMO CRECER</strong></p>
+                <p>Todo el tiempo busco desarrollar nuevas habilidades e implementar los conocimientos y experiencias previas.</p>
+                <p>Me destaqué en politología, ingeniería, auditoría, y hoy en programación. Todas estas áreas tienen algo en común: pensamiento analítico, resolución de problemas y liderazgo.</p>
                 <p>No le temo a la responsabilidad ni a tomar decisiones. Trabajo excelentemente en equipo. Y siempre busco enfrentar nuevos desafíos.</p>
-                <p>En las próximas secciones vas a ver un resumen de mi desarrollo profesional. Pero recordá que siempre estoy en constante movimiento para aprender.</p>
+                <p> <em>En las próximas secciones vas a ver un resumen de mi desarrollo profesional. </em> <strong> Pero recordá que siempre estoy en constante movimiento para aprender.</strong></p>
                 </div>
-            <p class="titulos" onclick="nueva('tecn')"><< Tecnologías y herramientas >></p>
+            <p class="titulos tecn" onclick="nueva('tecn')"><< Tecnologías y herramientas >></p>
                 <div class="oculto no-ver" id="tecn">
-                <p>Front-End</p>
-                <div>
-                    <div>
+                <div class="divisor"><hr><p class="stack">Front-End</p></div>
+                <div class="app">
+                    <div class="conjunto">
                         <img src="https://cdn.svgporn.com/logos/html-5.svg">
                         <p>HTML</p>
                     </div>
-                    <div>
+                    <div class="conjunto">
                         <img src="https://cdn.svgporn.com/logos/css-3.svg">
                         <p>CSS</p>
                     </div>
-                    <div>
+                    <div class="conjunto">
                         <img src="https://cdn.svgporn.com/logos/sass.svg">
                         <p>SASS</p>
                     </div>
-                    <div>
+                    <div class="conjunto">
                         <img src="https://cdn.svgporn.com/logos/javascript.svg">
                         <p>Javascript</p>
                     </div>
                 </div>
-    
-                <p>Back-End</p>
-                <div>
-                    <div>
+                
+                <div class="divisor"><hr><p class="stack">Back-End</p></div>
+                <div class="app">
+                    <div class="conjunto">
                         <img src="https://cdn.svgporn.com/logos/java.svg">
                         <p>JAVA</p>
                     </div>
-                    <div>
+                    <div class="conjunto">
                         <img src="https://cdn.svgporn.com/logos/javascript.svg">
                         <p>Javascript</p>
                     </div>
-                    <div>
+                    <div class="conjunto">
                         <img src="https://cdn.svgporn.com/logos/mysql.svg">
                         <p>MySQL</p>
                     </div>
                 </div>
     
-                <p>Testing</p>
-                <div>
-                    <div>
+                <div class="divisor"><hr><p class="stack">Testing</p></div>
+                <div class="app">
+                    <div class="conjunto">
                         <img src="https://cdn.svgporn.com/logos/postman.svg">
                         <p>Postman</p>
                     </div>
-                    <div>
+                    <div class="conjunto">
                         <img src="https://cdn.svgporn.com/logos/selenium.svg">
                         <p>Selenium</p>
                     </div>
                 </div>
     
-                <p>Otros</p>
-                <div>
-                    <div>
+                <div class="divisor"><hr><p class="stack">Otros</p></div>
+                <div class="app">
+                    <div class="conjunto">
                         <img src="https://cdn.svgporn.com/logos/nodejs-icon.svg">
                         <p>Node JS</p>
                     </div>
-                    <div>
+                    <div class="conjunto">
                         <img src="https://cdn.svgporn.com/logos/intellij-idea.svg">
                         <p>IntelliJ IDEA</p>
                     </div>
-                    <div>
+                    <div class="conjunto">
                         <img src="https://cdn.svgporn.com/logos/visual-studio-code.svg">
                         <p>Visual Studio Code</p>
                     </div>
-                    <div>
+                    <div class="conjunto">
                         <img src="https://cdn.svgporn.com/logos/salesforce.svg">
                         <p>Salesforce: Platform, Tableau, CPQ</p>
                     </div>
-                    <div>
-                        <div>
+                    <div class="conjunto">
+                        <img src="./img/tango-gestion-2.png">
+                        <p>ERP Tango</p>
+                    </div>
+                    <div class="conjunto esp">
+                        <div class="excel">
                             <img src="./img/libreoff.png" alt="">
                             <img src="./img/Google-Sheets-Header.png" alt="">
                             <img src="./img/excel.png" alt="">
                         </div>
                         <p>Manejo avanzado de hojas de cálculo: tablas dinámica y macros en Calc, Google Sheets y Excel</p>
                     </div>
-                    <div>
-                        <img src="./img/tango-gestion-2.png">
-                        <p>ERP Tango</p>
                     </div>
                 </div>
-                </div>
-            <p class="titulos" onclick="nueva('cert')"><< Conocimientos y certificaciones >></p>
+            <p class="titulos cert" onclick="nueva('cert')"><< Conocimientos y certificaciones >></p>
                 <div class="oculto no-ver" id="cert">
                     <p>Actualmente</p>
                         <img src="./img/digital-house.png" alt="">
@@ -192,7 +201,7 @@
                             <p>Dato importante: estaba becada por mis notas</p>
                         </div>
                 </div>
-            <p class="titulos" onclick="nueva('exp')"><< Experiencia >></p>
+            <p class="titulos exp" onclick="nueva('exp')"><< Experiencia >></p>
                 <div class="oculto no-ver" id="exp">
                     <div>
                         <img src="./img/enta.jpg" alt="">
@@ -279,7 +288,7 @@
                         </div>
                     </div>
                 </div>
-            <p class="titulos" onclick="nueva('jug')"><< ¡Juguemos! >></p>
+            <p class="titulos jug" onclick="nueva('jug')"><< ¡Juguemos! >></p>
                 <div class="oculto no-ver" id="jug">
                     <p>¡Hola recruiter! ¿Te interesó mi perfil? Juguemos y veamos si me interesa tu propuesta. Si tus respuestas son correctas, ¡ganarás un premio!</p>
                     <form action="" method="POST">
@@ -295,7 +304,7 @@
                     </form>
                     <a href="./cv/cv Ana Laura S - ES.pdf" target="_blank">CV listo para descargar</a>
                 </div>
-            <p class="titulos" onclick="nueva('bonus')"><< Bonus Track >></p>
+            <p class="titulos bonus" onclick="nueva('bonus')"><< Bonus Track >></p>
                 <div class="oculto no-ver" id="bonus">
                     <p>La verdadera felicidad viene del espacio que te rodea.</p>
                     <p>Les presento a una parte de mi familia. Todos rescatados de la calle</p>

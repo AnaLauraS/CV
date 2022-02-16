@@ -70,13 +70,40 @@ body {
   border-radius: 12px;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  background-color: rgba(54, 54, 54, 0.548);
+  background-color: rgba(34, 34, 34, 0.548);
   width: 90vw;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .presentacion p, .presentacion h3 {
-  font-family: Calibri, 'Trebuchet MS', sans-serif;
   padding: 0.3rem;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.chau-pres {
+  background-color: rgba(34, 34, 34, 0.829);
+  text-align: right;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 0.1rem 1rem;
+  position: relative;
+  top: -1.8rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.btn-ver, .btn-ocultar {
+  cursor: pointer;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.btn-ver i, .btn-ocultar i {
+  padding-right: 0.5rem;
 }
 
 .titulo-boton {
@@ -156,11 +183,97 @@ body {
   display: inline-block;
 }
 
+#tecn {
+  text-align: left;
+}
+
+#tecn .divisor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#tecn .stack {
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+#tecn .app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.6rem;
+  padding-bottom: 1.3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#tecn img {
+  height: 3rem;
+}
+
+#tecn .conjunto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5rem;
+}
+
+#tecn .conjunto p {
+  font-size: 0.9rem;
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  text-align: center;
+}
+
+#tecn .conjunto .excel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#tecn .conjunto:hover p {
+  opacity: 1;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+#tecn .esp {
+  width: 10rem;
+}
+
+#tecn hr {
+  width: 70%;
+  border: 3px solid #f3e7f1;
+  border-radius: 5px;
+}
+
 footer {
   position: fixed;
   bottom: 0;
   width: 100vw;
-  background-color: black;
+  background-color: #16283d;
   height: 1.7rem;
   display: -webkit-box;
   display: -ms-flexbox;

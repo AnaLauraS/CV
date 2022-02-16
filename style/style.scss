@@ -59,15 +59,37 @@ body {
     border-radius: 12px;
     margin-top: 1rem;
     margin-bottom: 2rem;
-   // background-color: rgba(134, 158, 89, 0.363);
-   // background-color: rgba(202, 122, 56, 0.363);
-   background-color: rgba(54, 54, 54, 0.548);
+    background-color: rgba(34, 34, 34, 0.548);
     width: 90vw;
+    transition: all 0.5s linear;
     p, h3 {
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
     padding: 0.3rem;
+    transition: all 0.5s linear;
 }
 }
+
+// botones para ocultar la intro
+.chau-pres {
+    background-color: rgba(34, 34, 34, 0.829);
+    text-align: right;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 0.1rem 1rem;
+    position: relative;
+    top: -1.8rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.5s linear;
+};
+
+.btn-ver, .btn-ocultar {
+    cursor: pointer;
+    transition: all 0.5s linear;
+    i {
+        padding-right: 0.5rem;
+    }
+}
+// fin botones para ocultar intro
 
 .titulo-boton {
     text-align: center;
@@ -80,11 +102,7 @@ body {
     font-family: 'Cabin Sketch', cursive;
     font-size: 1.2rem;
     border-radius: 12px;
-    // background-color: rgba(116, 197, 211, 0.637);
-   // background-color: rgba(87, 96, 211, 0.637);
-   // background-color: rgba(77, 141, 224, 0.637);
-   background-color: rgba(233, 118, 23, 0.603);
-    // width: 22rem;
+    background-color: rgba(233, 118, 23, 0.603);
     width: 13rem;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
@@ -93,13 +111,12 @@ body {
 }
 .titulos:hover, .mantener{
     font-size: 1.4rem;
-    // width: 25rem;
     width: 16rem;
     transition: 0.2s ease all;
     text-shadow: 1px 1px 2px gold, 0 0 1em red, 0 0 0.2em gold;
 }
 
-
+// ocultar secciones
 .oculto {
     border-radius: 12px;
     background-color: rgba(65, 72, 180, 0.384);
@@ -132,13 +149,67 @@ body {
         display: inline-block;
     }
 }
+// fin ocultar sesiones
 
+#tecn {
+    text-align: left;
+    .divisor {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
+    .stack {
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+        font-size: 1.4rem;
+    }
+    .app {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.6rem;
+        padding-bottom: 1.3rem;
+        justify-content: center;
+    }
+    img {
+        height: 3rem;
+    }
+    .conjunto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 5rem;
+        p {
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: all 0.5s linear;
+            text-align: center;
+        }
+        .excel {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .conjunto:hover {
+        p {
+            opacity: 1;
+            transition: all 0.4s linear;
+        }
+    }
+    .esp {
+        width: 10rem;
+    }
+    hr {
+        width: 70%;
+        border: 3px solid rgb(243, 231, 241);
+        border-radius: 5px;
+    }
+}
 
 footer {
     position: fixed;
     bottom: 0;
     width: 100vw;
-    background-color: black;
+    background-color: rgb(22, 40, 61);
     height: 1.7rem;
     display: flex;
     justify-content: space-around;
