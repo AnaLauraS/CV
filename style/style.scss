@@ -153,16 +153,6 @@ body {
 
 #tecn {
     text-align: left;
-    .divisor {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-evenly;
-    }
-    .stack {
-        font-weight: bold;
-        padding-bottom: 0.5rem;
-        font-size: 1.4rem;
-    }
     .app {
         display: flex;
         flex-wrap: wrap;
@@ -173,35 +163,100 @@ body {
     img {
         height: 3rem;
     }
-    .conjunto {
+}
+.stack {
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+.divisor {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+hr {
+    width: 70%;
+    border: 3px solid rgb(243, 231, 241);
+    border-radius: 5px;
+}
+
+.conjunto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5rem;
+    p {
+        font-size: 0.9rem;
+        opacity: 0;
+        transition: all 0.5s linear;
+        text-align: center;
+    }
+    .excel {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 5rem;
-        p {
-            font-size: 0.9rem;
-            opacity: 0;
-            transition: all 0.5s linear;
-            text-align: center;
-        }
-        .excel {
-            display: flex;
-            justify-content: space-between;
-        }
+        justify-content: space-between;
     }
-    .conjunto:hover {
-        p {
-            opacity: 1;
-            transition: all 0.4s linear;
-        }
+}
+.conjunto:hover {
+    p {
+        opacity: 1;
+        transition: all 0.4s linear;
     }
-    .esp {
-        width: 10rem;
+}
+.esp {
+    width: 10rem;
+}
+
+#cert {
+    img {
+        max-width: 10rem;
     }
-    hr {
-        width: 70%;
-        border: 3px solid rgb(243, 231, 241);
-        border-radius: 5px;
+}
+
+.actual {
+    p {
+        font-size: 0.9rem;
+        opacity: 0;
+        transition: all 0.5s linear;
+        text-align: center;
+    }
+}
+.actual:hover {
+    p {
+        opacity: 1;
+        transition: all 0.4s linear;
+    }
+}
+
+.conjunto3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        font-size: 0.9rem;
+        padding-bottom: 1rem;
+        opacity: 0;
+        transition: all 0.5s linear;
+        text-align: center;
+}
+}
+.conjunto3:hover {
+    p {
+        opacity: 1;
+        transition: all 0.4s linear;
+    }
+}
+
+.conjunto2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 0.5rem;
+    span {
+        font-size: 1.2rem;
+        grid-area: 1;
+    }
+    img {
+        position: relative;
+        top: 0.25rem;
     }
 }
 

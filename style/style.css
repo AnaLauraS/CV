@@ -187,24 +187,6 @@ body {
   text-align: left;
 }
 
-#tecn .divisor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-#tecn .stack {
-  font-weight: bold;
-  padding-bottom: 0.5rem;
-  font-size: 1.4rem;
-}
-
 #tecn .app {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,7 +204,31 @@ body {
   height: 3rem;
 }
 
-#tecn .conjunto {
+.stack {
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.divisor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+hr {
+  width: 70%;
+  border: 3px solid #f3e7f1;
+  border-radius: 5px;
+}
+
+.conjunto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,7 +242,7 @@ body {
   width: 5rem;
 }
 
-#tecn .conjunto p {
+.conjunto p {
   font-size: 0.9rem;
   opacity: 0;
   -webkit-transition: all 0.5s linear;
@@ -244,7 +250,7 @@ body {
   text-align: center;
 }
 
-#tecn .conjunto .excel {
+.conjunto .excel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,20 +259,80 @@ body {
           justify-content: space-between;
 }
 
-#tecn .conjunto:hover p {
+.conjunto:hover p {
   opacity: 1;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
 
-#tecn .esp {
+.esp {
   width: 10rem;
 }
 
-#tecn hr {
-  width: 70%;
-  border: 3px solid #f3e7f1;
-  border-radius: 5px;
+#cert img {
+  max-width: 10rem;
+}
+
+.actual p {
+  font-size: 0.9rem;
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  text-align: center;
+}
+
+.actual:hover p {
+  opacity: 1;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.conjunto3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.conjunto3 p {
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  text-align: center;
+}
+
+.conjunto3:hover p {
+  opacity: 1;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.conjunto2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+}
+
+.conjunto2 span {
+  font-size: 1.2rem;
+  -ms-grid-row: 1;
+  grid-area: 1;
+}
+
+.conjunto2 img {
+  position: relative;
+  top: 0.25rem;
 }
 
 footer {
