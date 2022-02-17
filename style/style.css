@@ -220,6 +220,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-bottom: 00.5rem;
 }
 
 hr {
@@ -267,10 +268,6 @@ hr {
 
 .esp {
   width: 10rem;
-}
-
-#cert img {
-  max-width: 10rem;
 }
 
 .actual p {
@@ -333,6 +330,119 @@ hr {
 .conjunto2 img {
   position: relative;
   top: 0.25rem;
+}
+
+#cert img {
+  max-width: 10rem;
+}
+
+#cert .app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-bottom: 1.3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#cert .app img {
+  height: 4rem;
+}
+
+#cert .app .conjunto {
+  width: 8rem;
+}
+
+#cert .app a {
+  text-decoration: none;
+}
+
+#cert .app p {
+  font-size: 0.8rem;
+}
+
+.conjunto4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.conjunto4 p {
+  text-align: left;
+  font-size: 1rem;
+  padding-left: 1rem;
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.conjunto4 p img {
+  height: 3rem;
+}
+
+.conjunto4:hover p {
+  opacity: 1;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.conjunto5 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+      grid-template-areas: "imagen puesto" "imagen descripcion" "etiqueta etiqueta";
+  gap: 0.5rem;
+}
+
+.conjunto5 .pp {
+  text-align: left;
+  font-size: 1rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: puesto;
+}
+
+.conjunto5 .pp img {
+  height: 3rem;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: imagen;
+}
+
+.conjunto5 .pp .desc {
+  text-align: left;
+  font-size: 0.9rem;
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: descripcion;
+}
+
+.conjunto5 .pp div {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: etiqueta;
+}
+
+.conjunto4:hover p {
+  opacity: 1;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
 footer {

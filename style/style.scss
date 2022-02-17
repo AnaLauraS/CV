@@ -173,6 +173,7 @@ body {
     display: flex;
     align-items: baseline;
     justify-content: space-evenly;
+    padding-bottom: 00.5rem;
 }
 hr {
     width: 70%;
@@ -204,12 +205,6 @@ hr {
 }
 .esp {
     width: 10rem;
-}
-
-#cert {
-    img {
-        max-width: 10rem;
-    }
 }
 
 .actual {
@@ -257,6 +252,88 @@ hr {
     img {
         position: relative;
         top: 0.25rem;
+    }
+}
+
+#cert {
+    img {
+        max-width: 10rem;
+    }
+    .app {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding-bottom: 1.3rem;
+        justify-content: center;
+        img {
+            height: 4rem;
+        }
+        .conjunto {
+            width: 8rem;
+        }
+        a {
+            text-decoration: none;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.conjunto4 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    p {
+        text-align: left;
+        font-size: 1rem;
+        padding-left: 1rem;
+        opacity: 0;
+        transition: all 0.5s linear;
+    img {
+        height: 3rem;
+    }
+}
+}
+.conjunto4:hover {
+    p {
+        opacity: 1;
+        transition: all 0.4s linear;
+    }
+}
+    
+.conjunto5 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "imagen puesto"
+                         "imagen descripcion"
+                         "etiqueta etiqueta";
+    gap: 0.5rem;
+    .pp {
+        text-align: left;
+        font-size: 1rem;
+        grid-area: puesto;
+    img {
+        height: 3rem;
+        grid-area: imagen;
+    }
+    .desc {
+        text-align: left;
+        font-size: 0.9rem;
+        opacity: 0;
+        transition: all 0.5s linear;
+        grid-area: descripcion;
+    }
+    div {
+        grid-area: etiqueta;
+    }
+}
+}
+.conjunto4:hover {
+    p {
+        opacity: 1;
+        transition: all 0.4s linear;
     }
 }
 
