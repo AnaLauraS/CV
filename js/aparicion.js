@@ -48,3 +48,33 @@ function paraPresentacion (){
         t.setAttribute('style', 'display: inline;')
     }    
 }
+
+// para que aparezca la descripción del puesto en el grid
+var texto1="Hacía cumplir las normas ISO, implementaba mejoras de procesos, resolvía la comunicación entre la parte técnica y los clientes, generaba reportes";
+var texto2="Trabajaba todo lo que tenía que ver con la comunicación con lo empleados, incluidas las notas disciplinarias y suspensiones. Desarrollé proceso de liquidación efectivo y rápido";
+var texto3="Me encargaba de organizar la producción y dirigir a los operarios, logrando en tres meses, reducir el atraso productivo. ¿Por qué dejé el puesto? Porque me tomé mi licencia por maternidad y cuando volví, estuve unos meses part-time";
+var texto4="Básicamente dirigía un pequeño grupo de personas para que inventariaran correctamente";
+var texto5="Tan simple como inventariar correctamente la mercadiría existente";
+
+function mostrarDesc (a) {
+    document.querySelector('#desc').setAttribute('style', 'opacity: 1;');
+    document.querySelector('#desc').innerHTML=a;
+}
+function noSeVe () {
+    document.querySelector('#desc').setAttribute('style', 'opacity: 0;');
+}
+
+document.querySelector('.p1').addEventListener('mouseover', function () {mostrarDesc(texto1)});
+document.querySelector('.p2').addEventListener('mouseover', function () {mostrarDesc(texto2)});
+document.querySelector('.p3').addEventListener('mouseover', function () {mostrarDesc(texto3)});
+document.querySelector('.p1').addEventListener('mouseout', function () {noSeVe()});
+document.querySelector('.p2').addEventListener('mouseout', function () {noSeVe()});
+document.querySelector('.p3').addEventListener('mouseout', function () {noSeVe()});
+
+document.querySelector('.p4').addEventListener('mouseover', function () {    document.querySelector('#desc2').setAttribute('style', 'opacity: 1;');
+document.querySelector('#desc2').innerHTML=texto4;});
+document.querySelector('.p5').addEventListener('mouseover', function () {    document.querySelector('#desc2').setAttribute('style', 'opacity: 1;');
+document.querySelector('#desc2').innerHTML=texto5;});
+document.querySelector('.p4').addEventListener('mouseout', function () {document.querySelector('#desc2').setAttribute('style', 'opacity: 0;')});
+document.querySelector('.p5').addEventListener('mouseout', function () {document.querySelector('#desc2').setAttribute('style', 'opacity: 0;')});
+// fin de grid
