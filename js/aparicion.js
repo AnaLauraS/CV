@@ -90,6 +90,9 @@ var remotoNo = document.querySelector('#no-rem');
 remotoNo.addEventListener('click', function () {
     document.querySelector('#pago').classList.replace('form-vista', 'pago');
     document.querySelector('#cantidad').classList.replace('form-vista', 'cantidad');
+    document.getElementById('CV').style.opacity=0;
+    document.getElementById('CV').classList.remove('animate__heartBeat');
+    document.getElementById('CV').style.pointerEvents="none";
 });
     //alertas
 var alerta1="Solo me interesan trabajos remoto. Gracias";
@@ -100,13 +103,17 @@ var pagoNo = document.querySelector('#pago-no');
 pagoNo.addEventListener('click', function () {
     document.querySelector('#cantidad').classList.replace('cantidad','form-vista');
     document.getElementById('CV').style.opacity=0;
+    document.getElementById('CV').classList.remove('animate__heartBeat');
     document.getElementById('CV').style.pointerEvents="none";
 });
 var pagoSi = document.querySelector('#pago-si');
 pagoSi.addEventListener('click', function () {
     document.querySelector('#cantidad').classList.replace('form-vista', 'cantidad');
     document.getElementById('CV').style.opacity=1;
+    document.getElementById('CV').classList.add('animate__heartBeat');
     document.getElementById('CV').style.pointerEvents="auto";
+    //document.getElementById('CV').style.opacity=1;
+    //document.getElementById('CV').style.pointerEvents="auto";
 });
 
 var btnProb = document.querySelector('#probar');
@@ -115,10 +122,12 @@ btnProb.addEventListener("click",function(event){
     event.preventDefault();
     if (sueldo>200000) {
         document.getElementById('CV').style.opacity=1;
+        document.getElementById('CV').classList.add('animate__heartBeat');
         document.getElementById('CV').style.pointerEvents="auto";
         document.getElementById('CV').style.marginTop=0;
     } else {
         document.getElementById('CV').style.opacity=0;
+        document.getElementById('CV').classList.remove('animate__heartBeat');
         document.getElementById('CV').style.pointerEvents="none";
     } ;
 });
