@@ -295,21 +295,31 @@
             
             <p class="titulos jug" onclick="nueva('jug')"><< ¡Juguemos! >></p>
                 <div class="oculto no-ver" id="jug">
-                    <p>¡Hola recruiter! ¿Te interesó mi perfil? Juguemos y veamos si me interesa tu propuesta. Si tus respuestas son correctas, ¡ganarás un premio!</p>
-                    <form action="" method="POST">
+                    <p>¡Hola Recruiter! ¿Te interesó mi perfil? Juguemos y veamos si me interesa tu propuesta. Si tus respuestas son correctas, ¡ganarás un premio!</p>
+                    <form action="" method="">
                         <p>¿Es trabajo 100% remoto?</p>
-                        <label for=""><input type="radio" name="tipo-trabajo" id="">sí</label>
-                        <label for=""><input type="radio" name="tipo-trabajo" id="">no</label>
-                        <p>¿Es pago en dólares o euros?<p>
-                        <label for=""><input type="radio" name="tipo-pago" id="">sí</label>
-                        <label for=""><input type="radio" name="tipo-pago" id="">no</label>
-                        <p>¿Cuál es el sueldo bruto promedio que ofrecen?</p>
-                        <input type="number" name="bruto" id="" placeholder="200.000">
-                        <!--<button type="submit">Evaluar</button>-->
+                        <label for="si-rem"><input type="radio" name="tipo-trabajo" id="si-rem"> sí</label>
+                        <label for="no-rem"><input type="radio" name="tipo-trabajo" id="no-rem" onclick="mensaje(alerta1)"> no</label>
+                        <div id="pago" class="pago">
+                            <p>¿Es pago en dólares o euros?<p>
+                            <label for=""><input type="radio" name="tipo-pago" id="pago-si"> sí</label>
+                            <label for=""><input type="radio" name="tipo-pago" id="pago-no"> no</label>
+                        </div>
+                        <div class="cantidad" id="cantidad">
+                            <p>¿Cuál es el sueldo bruto promedio que ofrecen?</p>
+                            <p>$</p><input type="number" name="bruto" id="cBruto" placeholder="bruto mensual" max="800000"><br>
+                            <button id="probar" onclick="ultMen()">¿Probamos?</button>
+                            <script src="confetti.js"></script>
+                        </div>
+                        <script src="./js/aparicion.js"></script>
                     </form>
-                    <a href="./cv/cv Ana Laura S - ES.pdf" target="_blank">CV listo para descargar</a>
+
+                <canvas class="confetti" id="canvas"></canvas>
+                <script src="./js/confetti.js"></script>
+
+                    <a href="./cv/cv Ana Laura S - ES.pdf" target="_blank" id="CV">CV listo para descargar</a>
                 </div>
-                
+
             <p class="titulos bonus" onclick="nueva('bonus')"><< Bonus Track >></p>
                 <div class="oculto no-ver" id="bonus">
                     <p>La verdadera felicidad viene del espacio que te rodea.</p>

@@ -78,3 +78,55 @@ document.querySelector('#desc2').innerHTML=texto5;});
 document.querySelector('.p4').addEventListener('mouseout', function () {document.querySelector('#desc2').setAttribute('style', 'opacity: 0;')});
 document.querySelector('.p5').addEventListener('mouseout', function () {document.querySelector('#desc2').setAttribute('style', 'opacity: 0;')});
 // fin de grid
+
+
+// interacción con formularios
+var remotoSi = document.querySelector('#si-rem');
+remotoSi.addEventListener('click', function () {
+    document.querySelector('#pago').classList.replace('pago','form-vista')
+
+});
+var remotoNo = document.querySelector('#no-rem');
+remotoNo.addEventListener('click', function () {
+    document.querySelector('#pago').classList.replace('form-vista', 'pago');
+    document.querySelector('#cantidad').classList.replace('form-vista', 'cantidad');
+});
+    //alertas
+var alerta1="Solo me interesan trabajos remoto. Gracias";
+var alerta2="Gracias, pero el sueldo ofrecido está por debajo de mis expectativas"
+function mensaje(a) {alert(a)};
+
+var pagoNo = document.querySelector('#pago-no');
+pagoNo.addEventListener('click', function () {
+    document.querySelector('#cantidad').classList.replace('cantidad','form-vista');
+    document.getElementById('CV').style.opacity=0;
+    document.getElementById('CV').style.pointerEvents="none";
+});
+var pagoSi = document.querySelector('#pago-si');
+pagoSi.addEventListener('click', function () {
+    document.querySelector('#cantidad').classList.replace('form-vista', 'cantidad');
+    document.getElementById('CV').style.opacity=1;
+    document.getElementById('CV').style.pointerEvents="auto";
+});
+
+var btnProb = document.querySelector('#probar');
+btnProb.addEventListener("click",function(event){
+    var sueldo = document.getElementById("cBruto").value;
+    event.preventDefault();
+    if (sueldo>200000) {
+        document.getElementById('CV').style.opacity=1;
+        document.getElementById('CV').style.pointerEvents="auto";
+        document.getElementById('CV').style.marginTop=0;
+    } else {
+        document.getElementById('CV').style.opacity=0;
+        document.getElementById('CV').style.pointerEvents="none";
+    } ;
+});
+
+function ultMen () {
+    var sueldo = document.getElementById("cBruto").value;
+    if (sueldo<200000) {
+        mensaje(alerta2);
+    }
+}
+// fin formularios
