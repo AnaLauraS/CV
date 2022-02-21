@@ -55,6 +55,7 @@ var texto2="Trabajaba todo lo que tenía que ver con la comunicación con lo emp
 var texto3="Me encargaba de organizar la producción y dirigir a los operarios, logrando en tres meses, reducir el atraso productivo. ¿Por qué dejé el puesto? Porque me tomé mi licencia por maternidad y cuando volví, estuve unos meses part-time";
 var texto4="Básicamente dirigía un pequeño grupo de personas para que inventariaran correctamente";
 var texto5="Tan simple como inventariar correctamente la mercadiría existente";
+var texto6="A los 23 años abrí una remiseria en Palermo (Capital Federal) y gestioné el negocio por 3 años coordinando con choferes y clientes empresariales. La cerré por cuestiones personales";
 
 function mostrarDesc (a) {
     document.querySelector('#desc').setAttribute('style', 'opacity: 1;');
@@ -79,6 +80,28 @@ document.querySelector('.p4').addEventListener('mouseout', function () {document
 document.querySelector('.p5').addEventListener('mouseout', function () {document.querySelector('#desc2').setAttribute('style', 'opacity: 0;')});
 // fin de grid
 
+// grid para pc
+function mostrarDescL (a) {
+    document.querySelector('#descGrande').setAttribute('style', 'opacity: 1;');
+    document.querySelector('#descGrande').innerHTML=a;
+}
+function noSeVe2 () {
+    document.querySelector('#descGrande').setAttribute('style', 'opacity: 0;');
+}
+
+document.querySelector('.p1').addEventListener('mouseover', function () {mostrarDescL(texto1)});
+document.querySelector('.p2').addEventListener('mouseover', function () {mostrarDescL(texto2)});
+document.querySelector('.p3').addEventListener('mouseover', function () {mostrarDescL(texto3)});
+document.querySelector('.p1').addEventListener('mouseout', function () {noSeVe2()});
+document.querySelector('.p2').addEventListener('mouseout', function () {noSeVe2()});
+document.querySelector('.p3').addEventListener('mouseout', function () {noSeVe2()});
+document.querySelector('.p4').addEventListener('mouseover', function () {mostrarDescL(texto4)});
+document.querySelector('.p5').addEventListener('mouseover', function () {mostrarDescL(texto5)});
+document.querySelector('.p6').addEventListener('mouseover', function () {mostrarDescL(texto6)});
+document.querySelector('.p4').addEventListener('mouseout', function () {noSeVe2()});
+document.querySelector('.p5').addEventListener('mouseout', function () {noSeVe2()});
+document.querySelector('.p6').addEventListener('mouseout', function () {noSeVe2()});
+// fin grid para pc
 
 // interacción con formularios
 var remotoSi = document.querySelector('#si-rem');
